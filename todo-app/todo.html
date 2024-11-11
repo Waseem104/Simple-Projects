@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>To-Do Application</h1>
+        <button id="toggle-theme">Dark Mode</button>
+    </div>
+    <div class="todo-app">
+        <div class="input">
+            <input type="search" id="search" placeholder="Please Enter the Task">
+            <select id="priority">
+                <option value="">Select Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+        <div class="filter">
+            <h3 class="list-tag">List of Tasks</h3>
+            <div class="filter-container">
+            <select id="filter-tasks">
+                <option value="">Filter By</option>
+                <option value="all">Show All</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
+            <button id="sort-tasks">Sort By Priority</button>
+        </div>
+        </div>
+        <div class="task-container">
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
