@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+  <header>
+    <h1>Quiz Master</h1>
+  </header>
+  <div id="start">
+    <div class="select">
+      <label for="category"></label>
+      <select id="category">
+        <option value="9" selected>Select Category</option>
+      </select>
+    </div>
+
+    <div class="select" style="right: 15px;">
+      <label for="difficulty"></label>
+      <select id="difficulty">
+        <option value="easy" selected>Select Difficulty</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <button id="start-quiz">Start Quiz</button>
+  </div>
+  <div id="quiz-container">
+    <div class="progres-bar"></div>
+    <div id="question-no"></div>
+    <div id="question">Question goes here</div>
+    <div id="choices">
+      <label>
+        <input type="radio" name="option" class="option" value="0">
+        <span id="option0">option 1</span>
+      </label>
+      <label>
+        <input type="radio" name="option" class="option" value="1">
+        <span id="option1">option 2</span>
+      </label>
+      <label>
+        <input type="radio" name="option" class="option" value="2">
+        <span id="option2">option 3</span>
+      </label>
+      <label>
+        <input type="radio" name="option" class="option" value="3">
+        <span id="option3">option 4</span>
+      </label>
+    </div>
+    <div class="navigation">
+      <button id="Previous">Previous</button>
+      <button id="next">Next</button>
+      <button id="Submit">Submit</button>
+    </div>
+  </div>
+</body>
+<script src="quiz.js"></script>
+
+</html>
